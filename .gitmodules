@@ -1,0 +1,3 @@
+[submodule "kos"]
+	path = kos
+	url = http://git.code.sf.net/p/cadcdev/kallistios
