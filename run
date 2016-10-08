@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -v /home/john/dev/perso/git/dc-dev/kos:/src/kos -it dc-dev:latest /bin/bash
