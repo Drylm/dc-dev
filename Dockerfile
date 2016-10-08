@@ -1,4 +1,4 @@
-FROM debian:unstable
+FROM debian:testing
 
 WORKDIR /src/kos
 
@@ -11,11 +11,8 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     wget \
     bzip2 \
     libjpeg-dev
-    
 
-ADD kos $WORKDIR
-
-RUN cd /src/utils/dc-chain \
-    && ./download.sh \
-    && ./unpack.sh \
-    && make
+#RUN cd /src/utils/dc-chain \
+#    && ./download.sh \
+#    && ./unpack.sh \
+#    && make
