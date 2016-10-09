@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker run -v /home/john/dev/perso/git/dc-dev/kos:/src/kos -it dc-dev:latest /bin/bash
+PWD=`pwd`
+docker run -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-dev:latest /bin/bash

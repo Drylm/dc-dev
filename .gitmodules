@@ -1,3 +1,6 @@
 [submodule "kos"]
 	path = kos
 	url = http://git.code.sf.net/p/cadcdev/kallistios
+[submodule "kos-ports"]
+	path = kos-ports
+	url = git://git.code.sf.net/p/cadcdev/kos-ports

@@ -10,7 +10,11 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     texinfo \
     wget \
     bzip2 \
-    libjpeg-dev
+    curl \
+    python \
+    subversion \
+    libjpeg-dev \
+    libpng-dev
 
 #RUN cd /src/utils/dc-chain \
 #    && ./download.sh \
