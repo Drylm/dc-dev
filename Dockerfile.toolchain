@@ -9,12 +9,7 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     make \
     texinfo \
     wget \
-    bzip2 \
-    curl \
-    python \
-    subversion \
-    libjpeg-dev \
-    libpng-dev
+    bzip2
 
 #RUN cd /src/utils/dc-chain \
 #    && ./download.sh \
