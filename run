@@ -1,4 +1,6 @@
 #!/bin/sh
 
 PWD=`pwd`
-docker run -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-dev:latest /bin/bash
+#-v $PWD/kos-ports:/src/kos-ports
+docker run -v $PWD/kos:/src/kos -it dc-toolchain:latest /bin/bash
+docker run -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-kos:latest /bin/bash
