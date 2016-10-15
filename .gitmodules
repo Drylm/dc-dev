@@ -4,3 +4,6 @@
 [submodule "kos-ports"]
 	path = kos-ports
 	url = git://git.code.sf.net/p/cadcdev/kos-ports
+[submodule "tools/dcload-serial"]
+	path = tools/dcload-serial
+	url = git://git.code.sf.net/p/cadcdev/dcload-serial

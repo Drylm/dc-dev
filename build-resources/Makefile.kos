@@ -1,0 +1,10 @@
+all:
+	make -C /src/kos all kos-ports_all
+	make -C /src/tools/dcload-serial all install
+
+install:
+	mkdir /usr/local/dc/kos
+	mkdir /usr/local/dc/kos-ports
+	cp -r /src/kos/lib/ /usr/local/dc/kos/
+	cp -r /src/kos/addons /usr/local/dc/kos/
+	cp -r /src/kos-ports/lib /usr/local/dc/kos-ports

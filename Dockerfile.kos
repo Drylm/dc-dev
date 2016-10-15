@@ -2,6 +2,7 @@ FROM dc-toolchain:latest
 
 ADD build-resources/dc-toolchain.tar.gz /
 ADD build-resources/environ.sh /usr/local/dc/
+ADD build-resources/Makefile.kos /usr/local/dc/
 
 
 
@@ -10,4 +11,5 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     python \    
     subversion \
     libjpeg-dev \
-    libpng-dev
+    libpng-dev \
+    libelf-dev
