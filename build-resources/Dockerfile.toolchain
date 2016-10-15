@@ -11,7 +11,5 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     wget \
     bzip2
 
-#RUN cd /src/utils/dc-chain \
-#    && ./download.sh \
-#    && ./unpack.sh \
-#    && make
+COPY compile-toolchain.sh /
+ENTRYPOINT ["/compile-toolchain.sh"]
