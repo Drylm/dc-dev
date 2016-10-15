@@ -9,5 +9,16 @@
  * 2nd intermediate container : Build KallistiOS / KOS Ports and dcload-tool
  * 3rd container: Contain all binaries to compile dreamcast binaries and upload tools
  
+# Commands
+
+```
+docker build -t dc-toolchain:latest -f ./Dockerfile.toolchain .
+docker build -t dc-kos:latest -f ./Dockerfile.kos .
+```
+
+```
+docker run -v $PWD/output:/output -v $PWD/kos:/src/kos -it dc-toolchain:latest
+docker run -v $PWD/output:/output -v $PWD/tools:/src/tools -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-kos:latest
+```
  
 
