@@ -5,7 +5,7 @@ cd /usr/local/dc
 
 . ./environ.sh
 
-make -f Makfile.kos all
+make -f Makefile.kos all
 make -f Makefile.kos install
 
 

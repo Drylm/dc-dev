@@ -1,11 +1,5 @@
 FROM dc-toolchain:latest
 
-ADD dc-toolchain.tar.gz /
-ADD environ.sh /usr/local/dc/
-ADD Makefile.kos /usr/local/dc/
-
-
-
 RUN apt-get -y update && apt-get --fix-missing -y install \
     curl \
     python \    
@@ -14,5 +8,9 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     libpng-dev \
     libelf-dev
 
+ADD dc-toolchain.tar.gz /
+ADD environ.sh /usr/local/dc/
+ADD Makefile.kos /usr/local/dc/
+
 COPY compile-kos.sh /
-ENTRYPOINT ["/compile-kos.sh"]
+ENTRYPOINT ["/bin/sh", "/compile-kos.sh"]
