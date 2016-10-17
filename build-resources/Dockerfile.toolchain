@@ -12,4 +12,4 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     bzip2
 
 COPY compile-toolchain.sh /
-ENTRYPOINT ["/compile-toolchain.sh"]
+ENTRYPOINT ["/bin/sh", "/compile-toolchain.sh"]
