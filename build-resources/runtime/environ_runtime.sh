@@ -20,7 +20,7 @@ export KOS_SUBARCH="pristine"
 # export KOS_SUBARCH="rte"	# PS2
 
 # KOS main base path
-export KOS_BASE="/usr/local/dc/kos/kos"
+export KOS_BASE="/src/dc/kos"
 
 # Make utility
 export KOS_MAKE="make"

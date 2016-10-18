@@ -1,19 +1,20 @@
 all:
-	make -C /src/kos all kos-ports_all
-	make -C /src/tools/dcload-serial all install
+	make -C /src/dc/kos all kos-ports_all
+	make -C /src/dc/dcload-serial all install
 
 install:
-	mkdir -p /usr/local/dc/kos/kos/utils/
-	mkdir -p /usr/local/dc/kos/kos-ports
-	cp /src/kos/environ.sh /usr/local/dc/kos/kos/
-	cp /src/kos/environ_base.sh /usr/local/dc/kos/kos/
-	cp /src/kos/environ_dreamcast.sh /usr/local/dc/kos/kos/
-	cp /src/kos/Makefile* /usr/local/dc/kos/kos/
-	cp -r /src/kos/kernel /usr/local/dc/kos/kos/
-	cp -r /src/kos/utils/gnu_wrappers /usr/local/dc/kos/kos/utils/
-	cp -r /src/kos/utils/genromfs /usr/local/dc/kos/kos/utils/
-	cp -r /src/kos/utils/bin2o /usr/local/dc/kos/kos/utils/
-	cp -r /src/kos/lib/ /usr/local/dc/kos/kos/
-	cp -r /src/kos/include/ /usr/local/dc/kos/kos/
-	cp -r /src/kos/addons /usr/local/dc/kos/kos/
-	cp -r /src/kos-ports /usr/local/dc/kos/
+	#	mkdir -p /usr/local/dc/kos/kos/utils/
+	# mkdir -p /usr/local/dc/kos/kos-ports
+	# cp /src/dc/kos/environ.sh /usr/local/dc/kos/kos/
+	# cp /src/dc/kos/environ_base.sh /usr/local/dc/kos/kos/
+	# cp /src/dc/kos/environ_dreamcast.sh /usr/local/dc/kos/kos/
+	# cp /src/dc/kos/Makefile* /usr/local/dc/kos/kos/
+	# cp -r /src/dc/kos/kernel /usr/local/dc/kos/kos/
+	# cp -r /src/dc/kos/utils/gnu_wrappers /usr/local/dc/kos/kos/utils/
+	# cp -r /src/dc/kos/utils/genromfs /usr/local/dc/kos/kos/utils/
+	# cp -r /src/dc/kos/utils/bin2o /usr/local/dc/kos/kos/utils/
+	# cp -r /src/dc/kos/lib/ /usr/local/dc/kos/kos/
+	# cp -r /src/dc/kos/include/ /usr/local/dc/kos/kos/
+	# cp -r /src/dc/kos/addons /usr/local/dc/kos/kos/
+	# cp -r /src/dc/kos-ports /usr/local/dc/kos/
+	# make -f	/src/dc/kos-ports/scripts/build.mk force-install

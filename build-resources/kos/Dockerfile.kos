@@ -1,14 +1,19 @@
-FROM dc-toolchain:latest
+FROM debian:testing
 
 RUN apt-get -y update && apt-get --fix-missing -y install \
     curl \
-    python \    
+    python \
+    make \
+    git \
     subversion \
+    libogg-dev \
     libjpeg-dev \
     libpng-dev \
     libelf-dev
 
-ADD dc-toolchain.tar.gz /
+ENV DC_TOOLS /src/dc
+
+ADD output/dc-toolchain.tar.gz /
 ADD environ.sh /usr/local/dc/
 ADD Makefile.kos /usr/local/dc/
 
