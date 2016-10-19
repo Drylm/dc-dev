@@ -1,9 +1,9 @@
 [submodule "kos"]
 	path = tools/kos
-	url = http://git.code.sf.net/p/cadcdev/kallistios
+	url = https://github.com/Bhaal22/KallistiOS.git
 [submodule "kos-ports"]
 	path = tools/kos-ports
-	url = git://git.code.sf.net/p/cadcdev/kos-ports
+	url = https://github.com/Bhaal22/kos-ports.git
 [submodule "tools/dcload-serial"]
 	path = tools/dcload-serial
 	url = git://git.code.sf.net/p/cadcdev/dcload-serial
