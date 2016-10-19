@@ -1,4 +1,4 @@
-FROM dc-toolchain:latest
+FROM drylm/dc-toolchain:latest
 
 ADD output/kos.tar.gz /
 
