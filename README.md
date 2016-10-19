@@ -20,5 +20,8 @@ docker build -t dc-kos:latest -f ./Dockerfile.kos .
 docker run -v $PWD/output:/output -v $PWD/kos:/src/kos -it dc-toolchain:latest
 docker run -v $PWD/output:/output -v $PWD/tools:/src/tools -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-kos:latest
 ```
- 
+
+# docker hub image
+
+ https://hub.docker.com/r/drylm/dc-dev/
 
