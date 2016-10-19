@@ -10,7 +10,6 @@ make -f Makefile.kos install
 
 
 tar czf /output/kos.tar.gz \
-    /src/dc/kos/environ.sh \
     /src/dc/kos/environ_base.sh \
     /src/dc/kos/environ_dreamcast.sh \
     /src/dc/kos/Makefile* \

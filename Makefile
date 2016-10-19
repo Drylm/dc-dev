@@ -2,7 +2,7 @@
 
 toolchain:
 	make -C build-resources build-toolchain
-	docker run --rm -v $(PWD)/build-resources/kos/output:/output -v $PWD/tools:/src -it dc-toolchain:latest
+	docker run --rm -v $(PWD)/build-resources/kos/output:/output -v $(PWD)/tools:/src -it dc-toolchain:latest
 
 kos:
 	make -C build-resources build-kos

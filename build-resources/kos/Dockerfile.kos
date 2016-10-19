@@ -5,6 +5,7 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     python \
     make \
     git \
+    gcc \
     subversion \
     libogg-dev \
     libjpeg-dev \
