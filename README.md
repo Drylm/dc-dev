@@ -12,13 +12,23 @@
 # Commands
 
 ```
-docker build -t dc-toolchain:latest -f ./Dockerfile.toolchain .
-docker build -t dc-kos:latest -f ./Dockerfile.kos .
+make all
+
+or
+
+make toolchain
+make kos
+make runtime
 ```
 
 ```
-docker run -v $PWD/output:/output -v $PWD/kos:/src/kos -it dc-toolchain:latest
-docker run -v $PWD/output:/output -v $PWD/tools:/src/tools -v $PWD/kos:/src/kos -v $PWD/kos-ports:/src/kos-ports -it dc-kos:latest
+docker run -v path/to/your/source:/src/your_project -it dc-kos:latest
+
+root@ab2caed664da:/# . /usr/local/dc/environ_runtime.sh
+root@ab2caed664da:/# which kos-cc
+/src/dc/kos/utils/gnu_wrappers/kos-cc
+
+launch your compilation
 ```
 
 # docker hub image
