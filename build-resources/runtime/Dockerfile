@@ -1,4 +1,5 @@
 FROM drylm/dc-toolchain:latest
+MAINTAINER Jonathan Muller <muller.john@gmail.com>
 
 ADD output/kos.tar.gz /
 

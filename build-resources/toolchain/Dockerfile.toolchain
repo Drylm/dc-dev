@@ -1,4 +1,5 @@
 FROM debian:testing
+MAINTAINER Jonathan Muller <muller.john@gmail.com>
 
 WORKDIR /src/kos
 
