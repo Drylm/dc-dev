@@ -1,6 +1,18 @@
-FROM drylm/dc-toolchain:latest
+FROM debian:testing
 MAINTAINER Jonathan Muller <muller.john@gmail.com>
+
+RUN apt-get -y update && apt-get --fix-missing -y install \
+    curl
+
+
+RUN curl -sSL http://drylm.org/dl/dc-toolchain.tar.gz \
+    | tar -vxz
 
 ADD output/kos.tar.gz /
 
 COPY environ_runtime.sh /usr/local/dc/
+CMD ["source", "/usr/local/dc/environ_runtime.sh"]
+
+ENV PATH /opt/toolchains/dc/bin:$PATH
+ENTRYPOINT []
+

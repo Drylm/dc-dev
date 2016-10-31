@@ -6,7 +6,6 @@ cd /usr/local/dc
 . ./environ.sh
 
 make -f Makefile.kos all
-make -f Makefile.kos install
 
 
 tar czf /output/kos.tar.gz \
@@ -24,4 +23,5 @@ tar czf /output/kos.tar.gz \
     /src/dc/kos/lib/ \
     /src/dc/kos/include/ \
     /src/dc/kos/addons \
-    /src/dc/kos-ports
+    /src/dc/kos-ports \
+    /opt/toolchains/dc/bin
