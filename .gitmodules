@@ -7,3 +7,6 @@
 [submodule "tools/dcload-serial"]
 	path = tools/dcload-serial
 	url = git://git.code.sf.net/p/cadcdev/dcload-serial
+[submodule "tools/dcload-ip"]
+	path = tools/dcload-ip
+	url = git://git.code.sf.net/p/cadcdev/dcload-ip
