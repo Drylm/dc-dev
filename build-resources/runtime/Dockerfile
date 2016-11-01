@@ -11,7 +11,8 @@ RUN curl -sSL http://drylm.org/dl/dc-toolchain.tar.gz \
 ADD output/kos.tar.gz /
 
 COPY environ_runtime.sh /usr/local/dc/
-CMD ["source", "/usr/local/dc/environ_runtime.sh"]
+RUN echo "source /usr/local/dc/environ_runtime.sh" >> /etc/bash.bashrc
+#RUN ["/bin/bash", "-c", "source /usr/local/dc/environ_runtime.sh"]
 
 ENV PATH /opt/toolchains/dc/bin:$PATH
 ENTRYPOINT []
