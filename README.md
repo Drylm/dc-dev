@@ -1,4 +1,4 @@
-# dc-dev: Dreamcast Environment inside Docker containers
+# dc-dev alias Dreamcker : Dreamcast Environment inside Docker containers
 
 ![alt text][dc-logo]
 
