@@ -2,7 +2,7 @@
 
 ![alt text][dc-logo]
 
-[dc-logo]: https://github.com/Bhaal22/dc-dev/blob/master/resources/Dreamcast.png "Dreamcast Logo"
+[dc-logo]: https://github.com/Bhaal22/dc-dev/blob/master/resources/dreamcker.png "Dreamcast Logo"
 
 # Container Creation
  * 1st intermediate container : Build the gcc toolchains for sh-elf and arm
