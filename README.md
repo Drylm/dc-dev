@@ -1,8 +1,9 @@
-# dc-dev alias Dreamcker : Dreamcast Environment inside Docker containers
+[dc-logo]: https://github.com/Bhaal22/dc-dev/blob/master/resources/dreamcker.png "Dreamcker"
+
+# Dreamcker : Dreamcast Environment inside Docker containers
 
 ![alt text][dc-logo]
 
-[dc-logo]: https://github.com/Bhaal22/dc-dev/blob/master/resources/dreamcker.png "Dreamcast Logo"
 
 # Container Creation
  * 1st intermediate container : Build the gcc toolchains for sh-elf and arm
