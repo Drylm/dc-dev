@@ -1,7 +1,7 @@
-#/bin/sh
+#/bin/bash
 
 set -e
-cd /usr/local/dc
+pushd /usr/local/dc
 
 . ./environ.sh
 
@@ -25,3 +25,5 @@ tar czf /output/kos.tar.gz \
     /src/dc/kos/addons \
     /src/dc/kos-ports \
     /opt/toolchains/dc/bin
+
+popd

@@ -19,4 +19,4 @@ ADD environ.sh /usr/local/dc/
 ADD Makefile.kos /usr/local/dc/
 
 COPY compile-kos.sh /
-ENTRYPOINT ["/bin/sh", "/compile-kos.sh"]
+ENTRYPOINT ["/bin/bash", "/compile-kos.sh"]
