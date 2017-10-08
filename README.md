@@ -23,9 +23,8 @@ make runtime
 ```
 
 ```
-docker run -v path/to/your/source:/src/your_project -it dc-kos:latest
+docker run --rm -v path/to/your/source:/src/your_project -it dc-dev:latest
 
-root@ab2caed664da:/# . /usr/local/dc/environ_runtime.sh
 root@ab2caed664da:/# which kos-cc
 /src/dc/kos/utils/gnu_wrappers/kos-cc
 
