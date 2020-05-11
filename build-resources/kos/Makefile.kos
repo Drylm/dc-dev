@@ -1,7 +1,7 @@
 all:
 	make -C /src/dc/kos all kos-ports_all
-	make -C /src/dc/dcload-serial all install
-	make -C /src/dc/dcload-ip all install
-	mv /opt/toolchains/dc/bin/dc-tool /opt/toolchains/dc/bin/dc-tool-serial
-	mv /usr/local/bin/dc-tool /opt/toolchains/dc/bin/dc-tool-ip
+	make -C /src/dc/dcload-serial all install && \
+		mv /opt/toolchains/dc/bin/dc-tool /opt/toolchains/dc/bin/dc-tool-serial
+	make TOOLINSTALLDIR=/dcload-ip -C /src/dc/dcload-ip all install && \
+		mv /dcload-ip/dc-tool /opt/toolchains/dc/bin/dc-tool-ip
 

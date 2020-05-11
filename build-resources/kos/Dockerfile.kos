@@ -1,4 +1,8 @@
-FROM debian:testing
+FROM debian:10
+
+LABEL maintainer="muller.john@gmail.com"
+ARG BUILD_DATE
+LABEL org.label-schema.build-date=$BUILD_DATE
 
 RUN apt-get -y update && apt-get --fix-missing -y install \
     curl \

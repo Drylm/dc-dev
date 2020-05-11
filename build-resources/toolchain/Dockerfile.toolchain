@@ -1,5 +1,7 @@
-FROM debian:testing
-MAINTAINER Jonathan Muller <muller.john@gmail.com>
+FROM debian:10
+LABEL maintainer="muller.john@gmail.com"
+ARG BUILD_DATE
+LABEL org.label-schema.build-date=$BUILD_DATE
 
 WORKDIR /src/kos
 
@@ -10,7 +12,8 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     make \
     texinfo \
     wget \
-    bzip2
+    bzip2 \
+    xz-utils
 
 COPY compile-toolchain.sh /
 ENTRYPOINT ["/bin/sh", "/compile-toolchain.sh"]
