@@ -5,6 +5,7 @@ pushd /usr/local/dc
 
 . ./environ.sh
 
+make -f Makefile.kos clean_all
 make -f Makefile.kos all
 
 

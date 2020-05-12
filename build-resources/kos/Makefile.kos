@@ -5,3 +5,5 @@ all:
 	make TOOLINSTALLDIR=/dcload-ip -C /src/dc/dcload-ip all install && \
 		mv /dcload-ip/dc-tool /opt/toolchains/dc/bin/dc-tool-ip
 
+clean_all:
+	make -C /src/dc/kos clean distclean kos-ports_clean  kos-ports_distclean

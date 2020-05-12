@@ -1,12 +1,12 @@
 .PHONY: toolchain
 
 build-toolchain:
-	docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t dc-toolchain:latest -f ./toolchain/Dockerfile.toolchain ./toolchain
+	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-toolchain:1.2 -f ./toolchain/Dockerfile.toolchain ./toolchain
 
 build-kos:
-	docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t dc-kos:latest -f ./kos/Dockerfile.kos ./kos
+	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-kos:1.2 -f ./kos/Dockerfile.kos ./kos
 
 build-runtime:
-	docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t dc-dev:latest -f ./runtime/Dockerfile ./runtime
+	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-dev:1.2 -f ./runtime/Dockerfile ./runtime
 
 
