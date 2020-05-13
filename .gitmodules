@@ -10,3 +10,9 @@
 [submodule "tools/dcload-ip"]
 	path = tools/dcload-ip
 	url = git://git.code.sf.net/p/cadcdev/dcload-ip
+[submodule "tools/CubicVR"]
+	path = tools/CubicVR
+	url = git@github.com:Drylm/CubicVR.git
+[submodule "tools/libs/CubicVR"]
+	path = tools/libs/CubicVR
+	url = git@github.com:Drylm/CubicVR.git
