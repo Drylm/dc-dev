@@ -9,44 +9,31 @@
 
 # Build architecture. Set the major architecture you'll be building for.
 export KOS_ARCH="dreamcast"
-#export KOS_ARCH="gba"
-#export KOS_ARCH="ps2"
-#export KOS_ARCH="ia32"
 
 # Build sub-architecture. If you need a particular sub-architecture, then set
 # that here; otherwise use "pristine".
 export KOS_SUBARCH="pristine"
-# export KOS_SUBARCH="navi"	# DC
-# export KOS_SUBARCH="rte"	# PS2
 
 # KOS main base path
 export KOS_BASE="/src/dc/kos"
+export EXTRA_MAKEFILE_BASE="/usr/local/dc"
 
 # Make utility
 export KOS_MAKE="make"
-#export KOS_MAKE="gmake"
 
 # Load utility
 export KOS_LOADER="dc-tool -x"				# dcload, preconfigured
 # export KOS_LOADER="dc-tool-ser -t /dev/ttyS0 -x"	# dcload-serial
-# export KOS_LOADER="vgba -sound 44100 -nocrc"		# GBA/vgba
 
 # Genromfs utility
 export KOS_GENROMFS="${KOS_BASE}/utils/genromfs/genromfs"
-#export KOS_GENROMFS="genromfs"
 
 # Compiler prefixes
 export KOS_CC_BASE="/opt/toolchains/dc/sh-elf"
 export KOS_CC_PREFIX="sh-elf"
-#export KOS_CC_BASE="/usr/local/dc/sh-elf"		# DC
-#export KOS_CC_PREFIX="sh-elf"
-#export KOS_CC_BASE="${EE}"				# PS2
-#export KOS_CC_PREFIX="ee"
-#export KOS_CC_BASE="/usr/local/gba/arm-elf"		# GBA
-#export KOS_CC_PREFIX="arm-elf"
 
 # If you are compiling for DC and have an ARM compiler, use these too.
-export DC_ARM_BASE="//opt/toolchains/dc/arm-eabi"
+export DC_ARM_BASE="/opt/toolchains/dc/arm-eabi"
 export DC_ARM_PREFIX="arm-eabi"
 
 # Expand PATH (comment out if you don't want this done here)
@@ -60,7 +47,7 @@ export KOS_INC_PATHS="-I${KOS_BASE}/../kos-ports/include"
 # traces enabled. Some platforms may have optimization restrictions,
 # please check README.
 export KOS_CFLAGS="-O2 -fomit-frame-pointer"
-# export KOS_CFLAGS="-O2 -DFRAME_POINTERS"
+
 
 # Everything else is pretty much shared. If you want to configure compiler
 # options or other such things, look at this file.

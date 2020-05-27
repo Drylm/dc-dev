@@ -1,0 +1,4 @@
+all:
+	cmake -S /src/dc/img4dc/ -B /tmp/img4dc && \
+		make -C /tmp/img4dc && \
+		cp /tmp/img4dc/cdi4dc/cdi4dc /opt/toolchains/dc/bin/

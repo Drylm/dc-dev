@@ -7,6 +7,11 @@ pushd /usr/local/dc
 
 make -f Makefile.kos clean_all
 make -f Makefile.kos all
+make -f Makefile.tools all
+
+cp /src/dc/kos/utils/scramble/scramble /opt/toolchains/dc/bin/
+
+pushd 
 
 
 tar czf /output/kos.tar.gz \

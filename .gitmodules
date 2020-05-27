@@ -16,3 +16,6 @@
 [submodule "tools/libs/CubicVR"]
 	path = tools/libs/CubicVR
 	url = git@github.com:Drylm/CubicVR.git
+[submodule "tools/img4dc"]
+	path = tools/img4dc
+	url = git@github.com:Drylm/img4dc.git

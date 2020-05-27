@@ -1,0 +1,6 @@
+prepare-burn:
+	sh-elf-objcopy -R .stack -O binary $(TARGET) $(STRIP)
+	mkdir -p $(BURN_FOLDER)/pre
+	scramble $(STRIP) $(BURN_FOLDER)/pre/$(SCRAMBLE)
+	genisoimage -C 0,11702 -V $(PROJECT) -G $(IP) -r -J -l -o $(BURN_FOLDER)/$(ISO) $(BURN_FOLDER)/pre
+	cdi4dc $(BURN_FOLDER)/$(ISO) $(BURN_FOLDER)/$(CDI)

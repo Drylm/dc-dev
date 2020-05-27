@@ -10,6 +10,8 @@ RUN apt-get -y update && apt-get --fix-missing -y install \
     make \
     git \
     gcc \
+    g++ \
+    cmake \
     subversion \
     libogg-dev \
     libjpeg-dev \
@@ -21,6 +23,7 @@ ENV DC_TOOLS /src/dc
 ADD output/dc-toolchain.tar.gz /
 ADD environ.sh /usr/local/dc/
 ADD Makefile.kos /usr/local/dc/
+ADD Makefile.tools /usr/local/dc/
 
 COPY compile-kos.sh /
 ENTRYPOINT ["/bin/bash", "/compile-kos.sh"]
