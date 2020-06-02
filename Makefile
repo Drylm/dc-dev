@@ -6,7 +6,7 @@ toolchain:
 
 kos:
 	make -C build-resources build-kos
-	docker run --rm -v $(PWD)/build-resources/runtime/output:/output -v $(PWD)/tools:/src/dc -it drylm/dc-kos:1.4.1
+	docker run --rm -v $(PWD)/build-resources/runtime/output:/output -v $(PWD)/tools:/src/dc -it drylm/dc-kos:1.5
 
 runtime:
 	cp build-resources/kos/output/dc-toolchain.tar.gz build-resources/runtime

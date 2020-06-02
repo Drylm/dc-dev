@@ -1,4 +1,9 @@
 # v1.5
+  * kos-port ([commit](https://github.com/KallistiOS/kos-ports/commit/4bc5a5893d1e6cb3045f616876c55a1faec77469))
+  * kos ([commit](https://github.com/KallistiOS/KallistiOS/commit/b3967a49ba45219759a9b28a884b9093a46927f4))
+  * when building kos, if clean target fails, ignore and continue
+
+# v1.4.1
 
  * libtremor added back to official kos-port. xiph moved repos to gitlab.
 

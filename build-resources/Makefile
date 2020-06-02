@@ -4,9 +4,9 @@ build-toolchain:
 	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-toolchain:1.2 -f ./toolchain/Dockerfile.toolchain ./toolchain
 
 build-kos:
-	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-kos:1.4.1 -f ./kos/Dockerfile.kos ./kos
+	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-kos:1.5 -f ./kos/Dockerfile.kos ./kos
 
 build-runtime:
-	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-dev:1.4.1 -f ./runtime/Dockerfile ./runtime
+	docker build --no-cache --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t drylm/dc-dev:1.5 -f ./runtime/Dockerfile ./runtime
 
 
