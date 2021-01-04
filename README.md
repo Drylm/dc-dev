@@ -13,6 +13,9 @@
 # Commands
 
 ```
+# for a fresh cloned source tree
+git submodule init && git sunmodule update
+
 make all
 
 or
